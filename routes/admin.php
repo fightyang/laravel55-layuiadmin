@@ -9,7 +9,7 @@
 */
 Route::group(['namespace'=>'Admin','prefix'=>'admin'],function (){
     //登录、注销
-    Route::get('login','LoginController@showLoginForm')->name('admin.loginForm');
+    Route::get('/login','LoginController@showLoginForm')->name('admin.loginForm');
     Route::post('login','LoginController@login')->name('admin.login');
     Route::get('logout','LoginController@logout')->name('admin.logout');
 

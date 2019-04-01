@@ -16,6 +16,7 @@
 </div>
 <script type="text/javascript">
 
+    //利用jquery自动加载为所有的ajax请求加上csrf_token请求头
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
